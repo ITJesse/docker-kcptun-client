@@ -9,4 +9,4 @@ MTU=${MTU:-1400}
 SNDWND=${SNDWND:-1024}
 RCVWND=${RCVWND:-1024}
 
-/root/client_linux_amd64 -r ${SERVER_ADDRESS}:${SERVER_PORT} -l ${LOCAL_ADDRESS}:${LOCAL_PORT} --mode ${MODE} --mtu ${MTU} --sndwnd ${SNDWND} --rcvwnd ${RCVWND} --crypt none --dscp 46
+/root/client_linux_amd64 -r ${SERVER_ADDRESS}:${SERVER_PORT} -l ${LOCAL_ADDRESS}:${LOCAL_PORT} --mode ${MODE} --mtu ${MTU} --sndwnd ${SNDWND} --rcvwnd ${RCVWND} --crypt none --nocomp --dscp 46
