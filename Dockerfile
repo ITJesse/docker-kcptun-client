@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y wget \
 RUN chmod +x /root/start.sh
 CMD ["/root/start.sh"]
 
-EXPOSE 8388/udp
+EXPOSE 8388/tcp
 
 
 
